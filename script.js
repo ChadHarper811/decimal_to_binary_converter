@@ -1,10 +1,16 @@
-const a = () => {
-    return "freeCodeCamp " + b();
-}
-
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
+
+const countDownAndUp = (number) => {
+    console.log(number);
+    if (number === 0) {
+        console.log("Reached base case");
+        return;
+    } else {
+        countDownAndUp(number - 1);
+    }
+}
 
 // const decimalToBinary = (input) => {
 //     const inputs = [];
