@@ -3,8 +3,8 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const checkUserInput = () => {
-	if (numberInput.value === "") {
-		
+	if (!numberInput.value || isNaN(parseInt(numberInput.value)) || parseInt(numberInput.value) < 0) {
+		alert("Please provide a decimal number greater than or equal to 0");
 	}
 	console.log(numberInput.value)
 }
